@@ -1,9 +1,10 @@
-import { Header } from "./components/Header"
-import { Footer } from "./components/Footer"
-import { CubicInputs } from "./components/CubicInputs"
-import { CubicTableOne } from "./components/CubicTableOne"
-import { CubicTableTwo } from "./components/CubicTableTwo"
-
+import { Header } from "./components/Header";
+import { Footer } from "./components/Footer";
+import { CubicInputs } from "./components/CubicInputs";
+import { Analysis } from "./components/Analysis";
+import { Summary } from "./components/Summary";
+import { History } from "./components/History";
+import { Graph } from "./components/Graph";
 
 export const App = () => {
   return (
@@ -13,8 +14,10 @@ export const App = () => {
         <main className="space-y-12">
           <CubicInputs />
           <div className="grid grid-cols-2 gap-12">
-            <CubicTableOne />
-            <CubicTableTwo />
+            <Analysis />
+            <Summary />
+            <History />
+            <Graph />
           </div>
         </main>
         <Footer />
