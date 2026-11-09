@@ -1,3 +1,4 @@
+import { useRef, useState, useEffect, useMemo } from "react"
 import { Header } from "./components/Header";
 import { Footer } from "./components/Footer";
 import { CubicInputs } from "./components/CubicInputs";
@@ -5,6 +6,9 @@ import { Analysis } from "./components/Analysis";
 import { Summary } from "./components/Summary";
 import { History } from "./components/History";
 import { Graph } from "./components/Graph";
+import type { Coefficients } from "./types";
+
+
 
 export const App = () => {
   return (
